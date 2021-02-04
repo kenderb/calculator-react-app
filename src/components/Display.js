@@ -2,19 +2,28 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Display extends Component {
-  constructor({ results }) {
-    super({ results });
-    this.state = { results: '0' };
+  constructor(props) {
+    super(props);
+    this.state = { calculatorResults: '0' };
+  }
+
+  componentDidUpdate() {
+    this.onUpdate();
+  }
+
+  onUpdate() {
+    const { results } = this.props;
+    this.setState({ calculatorResults: results });
   }
 
   render() {
-    const { results } = this.state;
+    const { calculatorResults } = this.state;
     return (
       <div>
         <p>
           results:
         </p>
-        {results}
+        {calculatorResults}
       </div>
     );
   }
