@@ -8,13 +8,10 @@ class Display extends Component {
   }
 
   render() {
-    this.setState({
-      calculatoResults: this.results,
-    });
     const { calculatoResults } = this.state;
     return (
       <div>
-        this is the result:
+        this is the results:
         {calculatoResults}
       </div>
     );
