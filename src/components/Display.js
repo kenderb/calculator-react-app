@@ -11,7 +11,9 @@ class Display extends Component {
     const { calculatoResults } = this.state;
     return (
       <div>
-        this is the results:
+        <p>
+          results:
+        </p>
         {calculatoResults}
       </div>
     );
