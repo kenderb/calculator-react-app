@@ -1,13 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Button from './Button';
 
-class ButtonPanel extends Component {
-  state = { }
-
-  render() {
-    return (
-      <div>Hello from ButtonPanel compoent</div>
-    );
-  }
-}
+const ButtonPanel = () => (
+  <div>
+    <Button value={1} />
+  </div>
+);
 
 export default ButtonPanel;
