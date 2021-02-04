@@ -3,7 +3,7 @@ import Button from './Button';
 
 const ButtonPanel = () => (
   <div>
-    <Button value={1} />
+    <Button buttonName={1} />
   </div>
 );
 
