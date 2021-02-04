@@ -4,17 +4,17 @@ import PropTypes from 'prop-types';
 class Display extends Component {
   constructor({ results }) {
     super({ results });
-    this.state = { calculatoResults: '0' };
+    this.state = { results: '0' };
   }
 
   render() {
-    const { calculatoResults } = this.state;
+    const { results } = this.state;
     return (
       <div>
         <p>
           results:
         </p>
-        {calculatoResults}
+        {results}
       </div>
     );
   }
