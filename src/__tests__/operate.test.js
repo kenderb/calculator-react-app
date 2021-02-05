@@ -24,4 +24,8 @@ describe('Operate method', () => {
     const results = operate(10, 0, '÷');
     expect(results).toEqual('no valid operation');
   });
+  it('should perform a simple math operation. operation == "%"', () => {
+    const results = operate(10, 40, '%');
+    expect(results).toEqual(10);
+  });
 });

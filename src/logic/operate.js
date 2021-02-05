@@ -13,10 +13,11 @@ const operate = (numberOne, numberTwo, operation) => {
         return Number(new Big(numberOne / numberTwo));
       }
       return 'no valid operation';
+    case '%':
+      return Number(new Big(numberOne % numberTwo));
     default:
-      // code block
+      return false;
   }
-  return true;
 };
 
 export default operate;
