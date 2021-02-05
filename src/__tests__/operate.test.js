@@ -26,6 +26,6 @@ describe('Operate method', () => {
   });
   it('should perform a simple math operation. operation == "%"', () => {
     const results = operate(10, 40, '%');
-    expect(results).toEqual(10);
+    expect(results).toEqual(4);
   });
 });

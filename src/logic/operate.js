@@ -14,7 +14,7 @@ const operate = (numberOne, numberTwo, operation) => {
       }
       return 'no valid operation';
     case '%':
-      return Number(new Big(numberOne % numberTwo));
+      return Number(new Big((numberTwo / 100) * numberOne));
     default:
       return false;
   }
