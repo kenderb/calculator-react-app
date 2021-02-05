@@ -1,33 +1,22 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-class Display extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { calculatorResults: '0' };
-  }
+const Display = ({ results }) => {
+  const [calculatorResults, useCalculatorResults] = useState('0');
 
-  componentDidUpdate() {
-    this.onUpdate();
-  }
+  useEffect(() => {
+    useCalculatorResults(results);
+  }, [results]);
 
-  onUpdate() {
-    const { results } = this.props;
-    this.setState({ calculatorResults: results });
-  }
-
-  render() {
-    const { calculatorResults } = this.state;
-    return (
-      <div>
-        <p>
-          results:
-        </p>
-        {calculatorResults}
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      <p>
+        results:
+      </p>
+      {calculatorResults}
+    </div>
+  );
+};
 
 Display.propTypes = {
   results: PropTypes.string.isRequired,
