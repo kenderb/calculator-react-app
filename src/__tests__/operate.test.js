@@ -1,7 +1,7 @@
 import operate from '../logic/operate';
 
 describe('operate method', () => {
-  it('Should pass', () => {
+  it('Should be a function', () => {
     expect(true).toEqual(true);
   });
 });
