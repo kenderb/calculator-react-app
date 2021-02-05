@@ -5,7 +5,7 @@ describe('Calculate method', () => {
     expect(typeof calculate).toEqual('function');
   });
   it('Should acept and object and a name as arguments', () => {
-    expect(calculate({ total: '30', next: '0', operation: 'X' }, '0')).toEqual(true);
+    expect(calculate({ total: 30, next: 2, operation: 'X' }, '0')).toEqual({ total: 30, next: 2 });
   });
 
   it('should use the buttonName argument to mutate the calculator’s data object con un valor negativo', () => {

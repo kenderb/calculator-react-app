@@ -6,7 +6,7 @@ const calculate = ({ total, next }, btnName) => {
     const newNext = (next) * -1;
     return { newTotal, newNext };
   }
-  return true;
+  return { total, next };
 };
 
 export default calculate;
