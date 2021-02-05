@@ -1,5 +1,3 @@
-import Big from 'big.js';
-
 const calculate = ({ total, next }, btnName) => {
   if (btnName === '+/-') {
     const newTotal = (total) * -1;
