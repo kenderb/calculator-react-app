@@ -9,9 +9,9 @@ describe('Calculate method', () => {
   });
 
   it('should use the buttonName argument to mutate the calculator’s data object con un valor negativo', () => {
-    expect(calculate({ total: 30, next: -1, operation: 'X' }, '+/-')).toEqual({ newTotal: -30, newNext: 1 });
+    expect(calculate({ total: 30, next: -1, operation: 'X' }, '+/-')).toEqual({ total: -30, next: 1 });
   });
   it('should use the buttonName argument to mutate the calculator’s data object con un valor positivo', () => {
-    expect(calculate({ total: 30, next: 1, operation: 'X' }, '+/-')).toEqual({ newTotal: -30, newNext: -1 });
+    expect(calculate({ total: 30, next: 1, operation: 'X' }, '+/-')).toEqual({ total: -30, next: -1 });
   });
 });
