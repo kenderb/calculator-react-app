@@ -9,6 +9,7 @@ class App extends Component {
     this.state = {
       total: null,
       next: null,
+      operation: '',
     };
   }
 
@@ -17,10 +18,10 @@ class App extends Component {
   }
 
   onchange() {
-    const { total, next } = this.state;
+    const { total, next, operation } = this.state;
     this.setState(
       {
-        total: calculate({ total, next }),
+        total: calculate({ total, next, operation }),
       },
     );
   }

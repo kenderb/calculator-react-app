@@ -8,6 +8,10 @@ describe('Operate method', () => {
     const results = operate(10, 10, '+');
     expect(results).toEqual(20);
   });
+  it('should perform a simple math operation. operation == "mill" to be false', () => {
+    const results = operate(10, 10, 'mill');
+    expect(results).toEqual(false);
+  });
   it('should perform a simple math operation. operation == "-"', () => {
     const results = operate(10, 10, '-');
     expect(results).toEqual(0);
