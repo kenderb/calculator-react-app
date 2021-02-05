@@ -6,6 +6,13 @@ const operate = (numberOne, numberTwo, operation) => {
       return Number(new Big(numberOne - numberTwo));
     case '+':
       return Number(new Big(numberOne + numberTwo));
+    case 'X':
+      return Number(new Big(numberOne * numberTwo));
+    case '÷':
+      if (numberTwo !== 0) {
+        return Number(new Big(numberOne / numberTwo));
+      }
+      return 'no valid operation';
     default:
       // code block
   }

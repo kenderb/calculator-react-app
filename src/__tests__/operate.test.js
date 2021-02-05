@@ -12,4 +12,16 @@ describe('Operate method', () => {
     const results = operate(10, 10, '-');
     expect(results).toEqual(0);
   });
+  it('should perform a simple math operation. operation == "X"', () => {
+    const results = operate(10, 10, 'X');
+    expect(results).toEqual(100);
+  });
+  it('should perform a simple math operation. operation == "÷"', () => {
+    const results = operate(10, 10, '÷');
+    expect(results).toEqual(1);
+  });
+  it('should retrun invalid if the numbertwo is zero. operation == "÷"', () => {
+    const results = operate(10, 0, '÷');
+    expect(results).toEqual('no valid operation');
+  });
 });
