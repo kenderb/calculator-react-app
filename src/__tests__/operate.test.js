@@ -1,7 +1,7 @@
-import operate from '../logic/operate';
+import operate from '../logic/calculate';
 
-describe('operate method', () => {
+describe('Operate method', () => {
   it('Should be a function', () => {
-    expect(true).toEqual(true);
+    expect(typeof operate).toEqual('function');
   });
 });
