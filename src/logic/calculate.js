@@ -4,12 +4,12 @@ const calculate = ({ total, next, operation }, typeOperation) => {
   if (operation === '+/-') {
     const newTotal = (total) * -1;
     const newNext = (next) * -1;
-    return { total: newTotal, next: newNext };
+    if (typeOperation) return { next: newNext };
+    return { total: newTotal };
   }
   if (operation === '+'
   || operation === '-'
   || operation === 'X'
-  || operation === '%'
   || operation === '÷') {
     return { next: 0, operation };
   }
@@ -18,6 +18,7 @@ const calculate = ({ total, next, operation }, typeOperation) => {
     return operate(total, next, typeOperation);
   }
   if (operation === 'AC') return { total: '0', next: null, operation: null };
+  if (operation === '%') return operate(total, 100, operation);
   if (operation.match(/[0-9]/g)) {
     if (typeOperation) {
       const newTotal = '';
