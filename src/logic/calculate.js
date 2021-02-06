@@ -12,20 +12,10 @@ const calculate = ({ total, next, operation }) => {
   || operation === '%'
   || operation === '÷') {
     const totalResult = operate(total, next, operation);
-    return { total: totalResult };
-  } if (operation === 'AC') {
-    return { total: '0' };
+    return { total: totalResult, next, operation };
   }
-  if (operation === '0'
-  || operation === '1'
-  || operation === '2'
-  || operation === '3'
-  || operation === '4'
-  || operation === '5'
-  || operation === '6'
-  || operation === '7'
-  || operation === '8'
-  || operation === '9') {
+  if (operation === 'AC') return { total: '0' };
+  if (operation.match(/[0-9]/g)) {
     const newTotal = '';
     let newOpera = '';
     if (total === '0' || total === 0 || total === null) newOpera = newTotal + operation;

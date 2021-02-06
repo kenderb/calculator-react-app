@@ -23,8 +23,23 @@ class App extends Component {
 
     return (
       <>
-        {next}
-        { operation}
+        <p>
+          total:
+          {' '}
+          {total}
+        </p>
+        <p>
+          next number:
+          {' '}
+          {next}
+        </p>
+        <p>
+          operation:
+          {' '}
+          {operation}
+        </p>
+        <br />
+        <br />
         <Display results={total} />
         <ButtonPanel clickHandler={this.handleClick} />
       </>
