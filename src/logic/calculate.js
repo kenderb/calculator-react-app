@@ -11,10 +11,10 @@ const calculate = ({ total, next, operation }, typeOperation) => {
   || operation === 'X'
   || operation === '%'
   || operation === '÷') {
-    return { operation };
+    return { next: 0, operation };
   }
-  if (operation === '=') return operate(total, next, operation);
-  if (operation === 'AC') return { total: '0', next: 0, operation: null };
+  if (operation === '=') return operate(total, next, typeOperation);
+  if (operation === 'AC') return { total: '0', next: null, operation: null };
   if (operation.match(/[0-9]/g)) {
     if (typeOperation) {
       const newTotal = '';
@@ -25,9 +25,9 @@ const calculate = ({ total, next, operation }, typeOperation) => {
     }
     const newTotal = '';
     let newOpera = '';
-    if (total === '0' || total === 0 || total === null) newOpera = newTotal + operation;
+    if (total === '0' || total === 0 || total === null || next === '=') newOpera = newTotal + operation;
     else newOpera = total + operation;
-    return { total: newOpera };
+    return { total: newOpera, next: null };
   }
   return operate(total, next, operation);
 };

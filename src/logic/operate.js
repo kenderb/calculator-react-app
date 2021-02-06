@@ -5,14 +5,14 @@ const operate = (numberOne, numberTwo, operation) => {
   const num2 = Number(new Big(numberTwo || 0));
   switch (operation) {
     case '-':
-      return (num1 - num2);
+      return { total: (num1 - num2), next: '=', operation: null };
     case '+':
-      return (num1 + num2);
+      return { total: (num1 + num2), next: '=', operation: null };
     case 'X':
-      return (num1 * num2);
+      return { total: (num1 * num2), next: '=', operation: null };
     case '÷':
       if (num2 !== 0) {
-        return (num1 / num2);
+        return { total: (num1 / num2), next: '=', operation: null };
       }
       return 'no valid operation';
     case '%':
