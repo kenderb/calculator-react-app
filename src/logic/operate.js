@@ -18,7 +18,7 @@ const operate = (numberOne, numberTwo, operation) => {
     case '%':
       return ((num2 / 100) * num1);
     default:
-      return { total: num1, next: num2 };
+      return { total: num1, next: num2, operation: null };
   }
 };
 
