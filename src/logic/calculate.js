@@ -22,7 +22,7 @@ const calculate = ({ total, next, operation }, typeOperation) => {
     if (typeOperation) return operate(next, 100, operation);
     return operate(total, 100, operation);
   }
-  if (operation.match(/[0-9]/g)) {
+  if (operation.match(/[0-9]|./g)) {
     const newTotal = '';
     let newOpera = '';
     if (typeOperation) {
