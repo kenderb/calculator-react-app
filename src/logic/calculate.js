@@ -14,9 +14,21 @@ const calculate = ({ total, next, operation }) => {
     const totalResult = operate(total, next, operation);
     return { total: totalResult };
   }
-  if (typeof (operation) === 'number') {
-    console.log(operation);
-    return operate(operation, next, operation);
+  if (operation === '0'
+  || operation === '1'
+  || operation === '2'
+  || operation === '3'
+  || operation === '4'
+  || operation === '5'
+  || operation === '6'
+  || operation === '7'
+  || operation === '8'
+  || operation === '9') {
+    const newTotal = '';
+    let newOpera = '';
+    if (total === null) newOpera = newTotal + operation;
+    else newOpera = total + operation;
+    return { total: newOpera };
   }
   return operate(total, next, operation);
 };
