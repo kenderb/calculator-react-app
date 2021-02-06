@@ -13,13 +13,16 @@ const calculate = ({ total, next, operation }, typeOperation) => {
   || operation === '÷') {
     return { next: 0, operation };
   }
-  if (operation === '=') return operate(total, next, typeOperation);
+  if (operation === '=') {
+    if (next === '=') return operate(total, null, typeOperation);
+    return operate(total, next, typeOperation);
+  }
   if (operation === 'AC') return { total: '0', next: null, operation: null };
   if (operation.match(/[0-9]/g)) {
     if (typeOperation) {
       const newTotal = '';
       let newOpera = '';
-      if (next === '0' || next === 0 || next === null) newOpera = newTotal + operation;
+      if (next === '0' || next === 0 || next === null || next === '=') newOpera = newTotal + operation;
       else newOpera = next + operation;
       return { next: newOpera };
     }
