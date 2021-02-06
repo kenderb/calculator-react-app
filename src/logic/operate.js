@@ -1,8 +1,8 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  const num1 = Number(new Big(numberOne));
-  const num2 = Number(new Big(numberTwo));
+  const num1 = Number(new Big(numberOne || 0));
+  const num2 = Number(new Big(numberTwo || 0));
   switch (operation) {
     case '-':
       return (num1 - num2);
@@ -18,7 +18,7 @@ const operate = (numberOne, numberTwo, operation) => {
     case '%':
       return ((num2 / 100) * num1);
     default:
-      return false;
+      return { total: num1, next: num2 };
   }
 };
 

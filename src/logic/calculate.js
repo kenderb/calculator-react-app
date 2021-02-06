@@ -14,7 +14,11 @@ const calculate = ({ total, next, operation }) => {
     const totalResult = operate(total, next, operation);
     return { total: totalResult };
   }
-  return false;
+  if (typeof (operation) === 'number') {
+    console.log(operation);
+    return operate(operation, next, operation);
+  }
+  return operate(total, next, operation);
 };
 
 export default calculate;
