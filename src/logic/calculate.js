@@ -13,6 +13,8 @@ const calculate = ({ total, next, operation }) => {
   || operation === '÷') {
     const totalResult = operate(total, next, operation);
     return { total: totalResult };
+  } if (operation === 'AC') {
+    return { total: '0' };
   }
   if (operation === '0'
   || operation === '1'
@@ -26,7 +28,7 @@ const calculate = ({ total, next, operation }) => {
   || operation === '9') {
     const newTotal = '';
     let newOpera = '';
-    if (total === null) newOpera = newTotal + operation;
+    if (total === '0' || total === 0 || total === null) newOpera = newTotal + operation;
     else newOpera = total + operation;
     return { total: newOpera };
   }
