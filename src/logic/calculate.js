@@ -18,7 +18,10 @@ const calculate = ({ total, next, operation }, typeOperation) => {
     return operate(total, next, typeOperation);
   }
   if (operation === 'AC') return { total: '0', next: null, operation: null };
-  if (operation === '%') return operate(total, 100, operation);
+  if (operation === '%') {
+    if (typeOperation) return operate(next, 100, operation);
+    return operate(total, 100, operation);
+  }
   if (operation.match(/[0-9]/g)) {
     const newTotal = '';
     let newOpera = '';
