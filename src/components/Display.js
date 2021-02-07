@@ -10,7 +10,7 @@ const Display = ({ results }) => (
 );
 
 Display.propTypes = {
-  results: PropTypes.number,
+  results: PropTypes.string,
 };
 Display.defaultProps = {
   results: 0,
