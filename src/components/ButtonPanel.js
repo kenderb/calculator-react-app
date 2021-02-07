@@ -18,7 +18,7 @@ const ButtonPanel = ({ clickHandler }) => (
           <Button
             buttonName={itemButton}
             key={itemButton}
-            onClickBtn={clickHandler}
+            clickHandler={() => clickHandler(itemButton)}
           />
         ))}
       </div>
