@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 class Button extends Component {
   handleClick = buttonName => {
-    const { onClickHandler } = this.props;
-    onClickHandler(buttonName);
+    const { clickHandler } = this.props;
+    clickHandler(buttonName);
   };
 
   render() {
@@ -23,6 +23,6 @@ class Button extends Component {
 
 Button.propTypes = {
   buttonName: PropTypes.string.isRequired,
-  onClickHandler: PropTypes.func.isRequired,
+  clickHandler: PropTypes.func.isRequired,
 };
 export default Button;

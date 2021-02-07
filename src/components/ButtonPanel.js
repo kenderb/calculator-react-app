@@ -28,7 +28,7 @@ class ButtonPanel extends Component {
               <Button
                 buttonName={itemButton}
                 key={itemButton}
-                onClickHandler={() => this.handleClick(itemButton)}
+                clickHandler={() => this.handleClick(itemButton)}
               />
             ))}
           </div>
