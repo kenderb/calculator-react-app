@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-[Live version](https://agitated-boyd-01ad47.netlify.app/)
+[Live version](https://objective-mahavira-2c23e8.netlify.app/)
 
 ## Prerequisites
 
