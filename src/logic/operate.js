@@ -14,7 +14,7 @@ const operate = (numberOne, numberTwo, operation) => {
       if (num2 !== 0) {
         return { total: (num1 / num2), next: '=', operation: null };
       }
-      return { total: '0', next: null, operation: null };
+      return { total: 'Math error', next: '=', operation: null };
     case '%':
       return { total: (num1 / num2), next: '=', operation: null };
     default:
