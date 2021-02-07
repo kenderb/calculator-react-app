@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-[Live version](https://calculator-react-app-kender.herokuapp.com/)
+[Live version](https://agitated-boyd-01ad47.netlify.app/)
 
 ## Prerequisites
 
