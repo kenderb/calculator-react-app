@@ -9,30 +9,23 @@ class App extends Component {
     this.state = {
       total: null,
       next: null,
-      operation: '',
+      operation: null,
     };
   }
 
-  componentDidUpdate() {
-    this.onchange();
-  }
-
-  onchange() {
+  handleClick = buttonName => {
     const { total, next, operation } = this.state;
-    this.setState(
-      {
-        total: calculate({ total, next, operation }),
-      },
-    );
+    if (operation) this.setState(calculate({ total, next, operation: buttonName }, operation));
+    else this.setState(calculate({ total, next, operation: buttonName }));
   }
 
   render() {
-    const { total } = this.state;
+    const { total, next, operation } = this.state;
 
     return (
       <>
-        <Display results={total} />
-        <ButtonPanel />
+        <Display results={operation ? next : total} />
+        <ButtonPanel clickHandler={this.handleClick} />
       </>
     );
   }

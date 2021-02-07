@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-[Live version](https://calculator-react-app-kender.herokuapp.com/)
+[Live version](https://objective-mahavira-2c23e8.netlify.app/)
 
 ## Prerequisites
 

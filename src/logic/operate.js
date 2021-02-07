@@ -1,24 +1,24 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  const num1 = Number(new Big(numberOne));
-  const num2 = Number(new Big(numberTwo));
+  const num1 = Number(new Big(numberOne || 0));
+  const num2 = Number(new Big(numberTwo || 0));
   switch (operation) {
     case '-':
-      return (num1 - num2);
+      return { total: (num1 - num2), next: '=', operation: null };
     case '+':
-      return (num1 + num2);
+      return { total: (num1 + num2), next: '=', operation: null };
     case 'X':
-      return (num1 * num2);
+      return { total: (num1 * num2), next: '=', operation: null };
     case '÷':
       if (num2 !== 0) {
-        return (num1 / num2);
+        return { total: (num1 / num2), next: '=', operation: null };
       }
-      return 'no valid operation';
+      return { total: 'Math error', next: '=', operation: null };
     case '%':
-      return ((num2 / 100) * num1);
+      return { total: (num1 / num2), next: '=', operation: null };
     default:
-      return false;
+      return { total: num1, next: num2, operation: null };
   }
 };
 
