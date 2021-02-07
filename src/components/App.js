@@ -25,6 +25,16 @@ class App extends Component {
     return (
       <>
         <p>
+          total:
+          {' '}
+          {total}
+        </p>
+        <p>
+          next number:
+          {' '}
+          {next}
+        </p>
+        <p>
           operation:
           {' '}
           {operation}

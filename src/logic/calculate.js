@@ -14,6 +14,7 @@ const calculate = ({ total, next, operation }, typeOperation) => {
     return { next: 0, operation };
   }
   if (operation === '=') {
+    if (next === '.' || total === '.') return { total: '0', next: null, operation: null };
     if (next === '=') return operate(total, null, typeOperation);
     return operate(total, next, typeOperation);
   }
