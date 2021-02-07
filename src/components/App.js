@@ -25,22 +25,10 @@ class App extends Component {
     return (
       <>
         <p>
-          total:
-          {' '}
-          {total}
-        </p>
-        <p>
-          next number:
-          {' '}
-          {next}
-        </p>
-        <p>
           operation:
           {' '}
           {operation}
         </p>
-        <br />
-        <br />
         <Display results={operation ? next : total} />
         <ButtonPanel clickHandler={this.handleClick} />
       </>
