@@ -22,6 +22,12 @@ const calculate = ({ total, next, operation }, typeOperation) => {
     if (typeOperation) return operate(next, 100, operation);
     return operate(total, 100, operation);
   }
+  if (operation.includes('.')) {
+    const zeroTotal = total || '0';
+    const zeroNext = next || '0';
+    if (zeroTotal.toString().includes('.') && !typeOperation) return { total, next };
+    if (zeroNext.toString().includes('.') && typeOperation) return { total, next, typeOperation };
+  }
   if (operation.match(/[0-9]|./g)) {
     const newTotal = '';
     let newOpera = '';
