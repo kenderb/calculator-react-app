@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 
 const divStyle = {
+  fontSize: '2em',
   display: 'flex',
   justifyContent: 'center',
   padding: '0.5em',
   backgroundColor: 'gray',
   color: 'white',
-  width: '25vw',
   margin: '0.5em auto',
   borderRadius: '1em',
 };
