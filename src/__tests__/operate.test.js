@@ -26,7 +26,7 @@ describe('Operate method', () => {
   });
   it('should retrun invalid if the numbertwo is zero. operation == "÷"', () => {
     const results = operate(10, 0, '÷');
-    expect(results).toEqual({ next: null, operation: null, total: '0' });
+    expect(results).toEqual({ next: '=', operation: null, total: 'Math error' });
   });
   it('should perform a simple math operation. operation == "%"', () => {
     const results = operate(10, 40, '%');
