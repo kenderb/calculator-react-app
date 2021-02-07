@@ -1,10 +1,17 @@
 import PropTypes from 'prop-types';
 
+const divStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  padding: '0.5em',
+  backgroundColor: 'gray',
+  color: 'white',
+  width: '25vw',
+  margin: '0.5em auto',
+  borderRadius: '1em',
+};
 const Display = ({ results }) => (
-  <div>
-    <p>
-      results:
-    </p>
+  <div style={divStyle}>
     {results}
   </div>
 );

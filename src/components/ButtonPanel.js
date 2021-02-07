@@ -10,10 +10,14 @@ const buttons = [
   { name: 'group5', values: ['0', '.', '='] },
 ];
 
+const divStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+};
 const ButtonPanel = ({ clickHandler }) => (
   <div>
     {buttons.map(item => (
-      <div key={item.name}>
+      <div key={item.name} style={divStyle}>
         {item.values.map(itemButton => (
           <Button
             buttonName={itemButton}
