@@ -33,6 +33,9 @@ const StyledButton = styled.button`
   width: ${props => (props.wide ? '50%' : '25%')};
   border: #e8e8e8 0.1px solid;
   background: ${props => (props.color ? '#f5913e' : '#gray')};
+  &:hover{
+    background: #cfe0f0;
+  }
 `;
 
 export {
