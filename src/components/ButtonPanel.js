@@ -9,10 +9,6 @@ class ButtonPanel extends Component {
   };
 
   render() {
-    const divStyle = {
-      display: 'flex',
-      justifyContent: 'center',
-    };
     const buttons = [
       { name: 'group1', values: ['AC', '+/-', '%', '÷'] },
       { name: 'group2', values: ['7', '8', '9', 'X'] },
@@ -23,7 +19,7 @@ class ButtonPanel extends Component {
     return (
       <div>
         {buttons.map(item => (
-          <div key={item.name} style={divStyle}>
+          <div key={item.name}>
             {item.values.map(itemButton => (
               <Button
                 buttonName={itemButton}

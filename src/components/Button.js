@@ -8,13 +8,9 @@ class Button extends Component {
   };
 
   render() {
-    const buttonStyle = {
-      fontSize: '2em',
-      padding: '0.8em',
-    };
     const { buttonName } = this.props;
     return (
-      <button type="button" onClick={() => this.handleClick(buttonName)} style={buttonStyle}>
+      <button type="button" onClick={() => this.handleClick(buttonName)}>
         {buttonName}
       </button>
     );
