@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
+import { displayStyles } from './styles';
 
 const Display = ({ results }) => (
-  <div>
+  <div style={displayStyles}>
     {results}
   </div>
 );

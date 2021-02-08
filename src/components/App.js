@@ -3,6 +3,8 @@ import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 
+const containerStyles = 'container';
+
 const App = () => {
   const [total, setTotal] = useState('0');
   const [next, setText] = useState(null);
@@ -27,8 +29,11 @@ const App = () => {
 
   return (
     <>
-      <Display results={operation ? next : total} />
-      <ButtonPanel clickHandler={handleClick} />
+      <div className={containerStyles}>
+
+        <Display results={operation ? next : total} />
+        <ButtonPanel clickHandler={handleClick} />
+      </div>
     </>
   );
 };
