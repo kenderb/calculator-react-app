@@ -14,7 +14,7 @@ const Button = ({ buttonName, onClickBtn }) => (
   <StyledButton
     type="button"
     onClick={() => onClickBtn(buttonName)}
-    color={getColor(buttonName)}
+    color={`${getColor(buttonName)}`}
     wide={buttonName === '0'}
   >
     {buttonName}
