@@ -7,11 +7,11 @@ const Button = ({ buttonName, onClickBtn }) => (
     type="button"
     onClick={() => onClickBtn(buttonName)}
     color={
-          buttonName === 'X'
-          || buttonName === '='
-          || buttonName === '-'
-          || buttonName === '+'
-          || buttonName === '÷'
+      buttonName === 'X'
+      || buttonName === '='
+      || buttonName === '-'
+      || buttonName === '+'
+      || buttonName === '÷'
       }
     wide={buttonName === '0'}
   >
