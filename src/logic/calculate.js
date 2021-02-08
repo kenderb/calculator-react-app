@@ -4,14 +4,14 @@ const calculate = ({ total, next, operation }, typeOperation) => {
   if (operation === '+/-') {
     const newTotal = (total) * -1;
     const newNext = (next) * -1;
-    if (typeOperation) return { next: newNext };
-    return { total: newTotal };
+    if (typeOperation) return { next: String(newNext) };
+    return { total: String(newTotal) };
   }
   if (operation === '+'
   || operation === '-'
   || operation === 'X'
   || operation === '÷') {
-    return { total, next: 0, operation };
+    return { total, next: '0', operation };
   }
   if (operation === '=') {
     if (next === '.' || total === '.' || total === 'Math error') return { total: '0', next: null, operation: null };
