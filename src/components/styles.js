@@ -16,7 +16,8 @@ const DisplayContainer = styled.div`
 
 const CalculatorContainer = styled.div`
   margin: ${marginContainer} auto ${marginContainer};
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
 `;
 
 const PanelContainer = styled.div`
