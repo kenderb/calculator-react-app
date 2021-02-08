@@ -14,8 +14,9 @@ class App extends Component {
   }
 
   handleClick = buttonName => {
-    const { total, next } = this.state;
-    this.setState(calculate({ total, next, operation: buttonName }));
+    const { total, next, operation } = this.state;
+    if (operation) this.setState(calculate({ total, next, operation: buttonName }, operation));
+    else this.setState(calculate({ total, next, operation: buttonName }));
   }
 
   render() {
@@ -23,9 +24,7 @@ class App extends Component {
 
     return (
       <>
-        {next}
-        { operation}
-        <Display results={total} />
+        <Display results={operation ? next : total} />
         <ButtonPanel clickHandler={this.handleClick} />
       </>
     );
