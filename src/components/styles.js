@@ -11,6 +11,7 @@ const DisplayContainer = styled.div`
   background-color: #858693;
   color: white;
   height: 100px;
+  font-weight: bold;
 `;
 
 const CalculatorContainer = styled.div`
@@ -18,4 +19,12 @@ const CalculatorContainer = styled.div`
   width: 700px;
 `;
 
-export { DisplayContainer, CalculatorContainer };
+const PanelContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  div {
+    height: 100px;
+  }
+`;
+
+export { DisplayContainer, CalculatorContainer, PanelContainer };

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
+import { PanelContainer } from './styles';
 
 const buttons = [
   { name: 'group1', values: ['AC', '+/-', '%', '÷'] },
@@ -11,7 +12,7 @@ const buttons = [
 ];
 
 const ButtonPanel = ({ clickHandler }) => (
-  <div>
+  <PanelContainer>
     {buttons.map(item => (
       <div key={item.name}>
         {item.values.map(itemButton => (
@@ -24,7 +25,7 @@ const ButtonPanel = ({ clickHandler }) => (
       </div>
     ))}
 
-  </div>
+  </PanelContainer>
 );
 
 ButtonPanel.propTypes = {
