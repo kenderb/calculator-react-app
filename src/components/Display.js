@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import { displayStyles } from './styles';
+import { DisplayContainer } from './styles';
 
 const Display = ({ results }) => (
-  <div style={displayStyles}>
+  <DisplayContainer>
     {results}
-  </div>
+  </DisplayContainer>
 );
 
 Display.propTypes = {
