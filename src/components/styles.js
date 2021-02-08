@@ -35,6 +35,7 @@ const StyledButton = styled.button`
   background: ${props => (props.color ? '#f5913e' : '#gray')};
   &:hover{
     background: #cfe0f0;
+    color: #f5913e;
   }
 `;
 
