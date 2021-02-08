@@ -35,7 +35,7 @@ const App = () => {
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/quote-of-the-day">
+          <Route path="/quote">
             <Quote />
           </Route>
           <Route path="/calculator">

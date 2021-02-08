@@ -15,7 +15,7 @@ const Navbar = () => (
         </Link>
       </li>
       <li>
-        <Link to="/quote-of-the-day">
+        <Link to="/quote">
           Quote of the day
         </Link>
       </li>
