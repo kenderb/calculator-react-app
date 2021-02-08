@@ -28,14 +28,13 @@ const PanelContainer = styled.div`
 `;
 
 const StyledButton = styled.button`
+  font-size:1.5rem;
   height: 100%;
-  width: 25%;
-`;
-
-const ZeroStyledButton = styled(StyledButton)`
-  width: 50%;
+  width: ${props => (props.wide ? '50%' : '25%')};
+  border: #e8e8e8 0.1px solid;
+  background: ${props => (props.color ? '#f5913e' : '#gray')};
 `;
 
 export {
-  DisplayContainer, CalculatorContainer, PanelContainer, StyledButton, ZeroStyledButton,
+  DisplayContainer, CalculatorContainer, PanelContainer, StyledButton,
 };
