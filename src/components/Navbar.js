@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { NavStyle } from './styles';
 
 const Navbar = () => (
-  <nav>
+  <NavStyle>
+    <Link to="/">LOGO</Link>
     <ul>
       <li>
         <Link to="/">
@@ -20,7 +22,7 @@ const Navbar = () => (
         </Link>
       </li>
     </ul>
-  </nav>
+  </NavStyle>
 );
 
 export default Navbar;

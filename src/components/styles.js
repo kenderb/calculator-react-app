@@ -38,7 +38,27 @@ const StyledButton = styled.button`
     color: #f5913e;
   }
 `;
+const NavStyle = styled.nav`
+  padding: 1em;
+  display:flex;
+  align-items: center;
+  background-color: red;
+  ul {
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    li {
+      padding:  0 1em 0 1em;
+    }
+    a {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+`;
 
 export {
   DisplayContainer, CalculatorContainer, PanelContainer, StyledButton,
+  NavStyle,
 };
