@@ -27,4 +27,15 @@ const PanelContainer = styled.div`
   }
 `;
 
-export { DisplayContainer, CalculatorContainer, PanelContainer };
+const StyledButton = styled.button`
+  height: 100%;
+  width: 25%;
+`;
+
+const ZeroStyledButton = styled(StyledButton)`
+  width: 50%;
+`;
+
+export {
+  DisplayContainer, CalculatorContainer, PanelContainer, StyledButton, ZeroStyledButton,
+};

@@ -1,11 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { StyledButton, ZeroStyledButton } from './styles';
 
-const Button = ({ buttonName, onClickBtn }) => (
-  <button type="button" onClick={() => onClickBtn(buttonName)}>
-    {buttonName}
-  </button>
-);
+const Button = ({ buttonName, onClickBtn }) => {
+  if (buttonName !== '0') {
+    return (
+      <StyledButton type="button" onClick={() => onClickBtn(buttonName)}>
+        {buttonName}
+      </StyledButton>
+    );
+  }
+  return (
+    <ZeroStyledButton type="button" onClick={() => onClickBtn(buttonName)}>
+      {buttonName}
+    </ZeroStyledButton>
+  );
+};
 Button.propTypes = {
   buttonName: PropTypes.string.isRequired,
   onClickBtn: PropTypes.func.isRequired,
