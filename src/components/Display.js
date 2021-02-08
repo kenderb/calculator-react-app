@@ -2,9 +2,6 @@ import PropTypes from 'prop-types';
 
 const Display = ({ results }) => (
   <div>
-    <p>
-      results:
-    </p>
     {results}
   </div>
 );
