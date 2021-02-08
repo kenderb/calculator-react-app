@@ -39,10 +39,13 @@ const App = () => {
             <Quote />
           </Route>
           <Route path="/calculator">
-            <CalculatorContainer>
-              <Display results={operation ? next : total} />
-              <ButtonPanel clickHandler={handleClick} />
-            </CalculatorContainer>
+            <div>
+              <h1>Let’s do some math!</h1>
+              <CalculatorContainer>
+                <Display results={operation ? next : total} />
+                <ButtonPanel clickHandler={handleClick} />
+              </CalculatorContainer>
+            </div>
           </Route>
           <Route path="/">
             <Home />

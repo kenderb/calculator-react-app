@@ -4,7 +4,7 @@ import { NavStyle } from './styles';
 
 const Navbar = () => (
   <NavStyle>
-    <Link to="/">LOGO</Link>
+    <Link to="/">Math Magicians</Link>
     <ul>
       <li>
         <Link to="/">
@@ -18,7 +18,7 @@ const Navbar = () => (
       </li>
       <li>
         <Link to="/quote">
-          Quote of the day
+          Quote
         </Link>
       </li>
     </ul>
