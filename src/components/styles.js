@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
+const marginContainer = '2rem';
+
 const DisplayContainer = styled.div`
-  padding: 1rem;
+  padding: 0.5rem;
   font-size: 2rem;
   display: flex;
   align-items: center;
@@ -12,7 +14,7 @@ const DisplayContainer = styled.div`
 `;
 
 const CalculatorContainer = styled.div`
-  margin:auto;
+  margin: ${marginContainer} auto ${marginContainer};
   width: 700px;
 `;
 
