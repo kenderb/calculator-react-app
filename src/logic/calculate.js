@@ -11,7 +11,7 @@ const calculate = ({ total, next, operation }, typeOperation) => {
   || operation === '-'
   || operation === 'X'
   || operation === '÷') {
-    return { next: 0, operation };
+    return { total, next: 0, operation };
   }
   if (operation === '=') {
     if (next === '.' || total === '.' || total === 'Math error') return { total: '0', next: null, operation: null };
@@ -35,7 +35,7 @@ const calculate = ({ total, next, operation }, typeOperation) => {
     if (typeOperation) {
       if (next === '0' || next === 0 || next === null || next === '=') newOpera = newTotal + operation;
       else newOpera = next + operation;
-      return { next: newOpera };
+      return { total, next: newOpera, operation: typeOperation };
     }
     if (total === '0' || total === 0 || total === null || next === '=') newOpera = newTotal + operation;
     else newOpera = total + operation;
