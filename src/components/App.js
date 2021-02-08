@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import Navbar from './Navbar';
 import Display from './Display';
+import Quote from './Quote';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
+import Home from './Home';
 import { CalculatorContainer } from './styles';
 
 const App = () => {
@@ -28,10 +36,23 @@ const App = () => {
 
   return (
     <>
-      <CalculatorContainer>
-        <Display results={operation ? next : total} />
-        <ButtonPanel clickHandler={handleClick} />
-      </CalculatorContainer>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/quote-of-the-day">
+            <Quote />
+          </Route>
+          <Route path="/calculator">
+            <CalculatorContainer>
+              <Display results={operation ? next : total} />
+              <ButtonPanel clickHandler={handleClick} />
+            </CalculatorContainer>
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </>
   );
 };
