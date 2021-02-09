@@ -85,7 +85,7 @@ const Section = styled.section`
     margin-top: 1em;
   }
 `;
-const Calculator = styled.div`
+const CalculatorDiv = styled.div`
   color: white;
   display: flex;
   flex-wrap: wrap;
@@ -119,5 +119,5 @@ const Main = styled.main`
 
 export {
   DisplayContainer, CalculatorContainer, PanelContainer, StyledButton,
-  NavStyle, Logo, Section, Calculator, QuoteContainer, Main,
+  NavStyle, Logo, Section, CalculatorDiv, QuoteContainer, Main,
 };
