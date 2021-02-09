@@ -9,6 +9,10 @@
 
 - React.js
 - CSS.
+- big.js.
+- prop-types
+- react-dom.
+- styled-components.
 
 
 ## Live Demo
