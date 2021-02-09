@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-gKsewC hYMqTz"
+>
+  <h1>
+    Let’s do some math!
+  </h1>
+  <div
+    className="sc-iBPRYJ gicZfC"
+  >
+    <div
+      className="sc-bdfBwQ hXDNAS"
+    >
+      0
+    </div>
+    <div
+      className="sc-gsTCUz dYdny"
+    >
+      <div>
+        <button
+          className="sc-dlfnbm fLGXYK"
+          color="false"
+          onClick={[Function]}
+          type="button"
+        >
+          AC
+        </button>
+        <button
+          className="sc-dlfnbm fLGXYK"
+          color="false"
+          onClick={[Function]}
+          type="button"
+        >
+          +/-
+        </button>
+        <button
+          className="sc-dlfnbm fLGXYK"
+          color="false"
+          onClick={[Function]}
+          type="button"
+        >
+          %
+        </button>
+        <button
+          className="sc-dlfnbm kLtawK"
+          color="true"
+          onClick={[Function]}
+          type="button"
+        >
+          ÷
+        </button>
+      </div>
+      <div>
+        <button
+          className="sc-dlfnbm fLGXYK"
+          color="false"
+          onClick={[Function]}
+          type="button"
+        >
+          7
+        </button>
+        <button
+          className="sc-dlfnbm fLGXYK"
+          color="false"
+          onClick={[Function]}
+          type="button"
+        >
+          8
+        </button>
+        <button
+          className="sc-dlfnbm fLGXYK"
+          color="false"
+          onClick={[Function]}
+          type="button"
+        >
+          9
+        </button>
+        <button
+          className="sc-dlfnbm kLtawK"
+          color="true"
+          onClick={[Function]}
+          type="button"
+        >
+          X
+        </button>
+      </div>
+      <div>
+        <button
+          className="sc-dlfnbm fLGXYK"
+          color="false"
+          onClick={[Function]}
+          type="button"
+        >
+          4
+        </button>
+        <button
+          className="sc-dlfnbm fLGXYK"
+          color="false"
+          onClick={[Function]}
+          type="button"
+        >
+          5
+        </button>
+        <button
+          className="sc-dlfnbm fLGXYK"
+          color="false"
+          onClick={[Function]}
+          type="button"
+        >
+          6
+        </button>
+        <button
+          className="sc-dlfnbm kLtawK"
+          color="true"
+          onClick={[Function]}
+          type="button"
+        >
+          -
+        </button>
+      </div>
+      <div>
+        <button
+          className="sc-dlfnbm fLGXYK"
+          color="false"
+          onClick={[Function]}
+          type="button"
+        >
+          1
+        </button>
+        <button
+          className="sc-dlfnbm fLGXYK"
+          color="false"
+          onClick={[Function]}
+          type="button"
+        >
+          2
+        </button>
+        <button
+          className="sc-dlfnbm fLGXYK"
+          color="false"
+          onClick={[Function]}
+          type="button"
+        >
+          3
+        </button>
+        <button
+          className="sc-dlfnbm kLtawK"
+          color="true"
+          onClick={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </div>
+      <div>
+        <button
+          className="sc-dlfnbm fbeBMw"
+          color="false"
+          onClick={[Function]}
+          type="button"
+        >
+          0
+        </button>
+        <button
+          className="sc-dlfnbm fLGXYK"
+          color="false"
+          onClick={[Function]}
+          type="button"
+        >
+          .
+        </button>
+        <button
+          className="sc-dlfnbm kLtawK"
+          color="true"
+          onClick={[Function]}
+          type="button"
+        >
+          =
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
