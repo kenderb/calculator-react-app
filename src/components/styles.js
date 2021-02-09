@@ -47,7 +47,8 @@ const NavStyle = styled.nav`
   }
   padding: 1em;
   margin: 0.5em;
-  display:flex;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   ul {
     margin-left: auto;
@@ -86,7 +87,9 @@ const Section = styled.section`
 const Calculator = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin: 3em;
+  padding: 3em;
+  margin: auto;
+  max-width: 95em;
   
 `;
 
@@ -96,7 +99,15 @@ const CalculatorContainer = styled.div`
   max-width: 700px;
 `;
 
+const QuoteContainer = styled.p`
+  text-align:center;
+  margin: auto;
+  padding: 5em;
+  font-size: 2em;
+  line-height: 1.3em;
+`;
+
 export {
   DisplayContainer, CalculatorContainer, PanelContainer, StyledButton,
-  NavStyle, Logo, Section, Calculator,
+  NavStyle, Logo, Section, Calculator, QuoteContainer,
 };

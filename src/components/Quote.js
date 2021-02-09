@@ -1,10 +1,11 @@
 import React from 'react';
+import { QuoteContainer } from './styles';
 
 const Quote = () => (
-  <p>
+  <QuoteContainer>
     Mathematics is not about numbers, equations, computations, or algorithms:
     it is about understanding. –William Paul Thurston
-  </p>
+  </QuoteContainer>
 );
 
 export default Quote;
