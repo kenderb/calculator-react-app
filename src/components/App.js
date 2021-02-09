@@ -6,7 +6,7 @@ import Quote from './Quote';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 import Home from './Home';
-import { CalculatorContainer, Calculator } from './styles';
+import { CalculatorContainer, Calculator, Main } from './styles';
 
 const App = () => {
   const [total, setTotal] = useState('0');
@@ -36,19 +36,25 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route path="/quote">
-            <Quote />
+            <Main>
+              <Quote />
+            </Main>
           </Route>
           <Route path="/calculator">
-            <Calculator>
-              <h1>Let’s do some math!</h1>
-              <CalculatorContainer>
-                <Display results={operation ? next : total} />
-                <ButtonPanel clickHandler={handleClick} />
-              </CalculatorContainer>
-            </Calculator>
+            <Main>
+              <Calculator>
+                <h1>Let’s do some math!</h1>
+                <CalculatorContainer>
+                  <Display results={operation ? next : total} />
+                  <ButtonPanel clickHandler={handleClick} />
+                </CalculatorContainer>
+              </Calculator>
+            </Main>
           </Route>
           <Route path="/">
-            <Home />
+            <Main>
+              <Home />
+            </Main>
           </Route>
         </Switch>
       </Router>

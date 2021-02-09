@@ -46,7 +46,7 @@ const NavStyle = styled.nav`
     }
   }
   padding: 1em;
-  margin: 0.5em 0 12em;
+  margin: 0.5em 0 6em;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -75,12 +75,12 @@ const Section = styled.section`
   margin: 4em;
   color: white;
   h1 {
-    font-size: 1.6em;
-    padding: 2em  0 1em;
+    font-size: 2.3em;
+    padding: 0  0 1em;
   }
   
   p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     line-height: 1.5em;
     margin-top: 1em;
   }
@@ -110,7 +110,14 @@ color: white;
   line-height: 1.3em;
 `;
 
+const Main = styled.main`
+  background-color: #0e0e0ea1;
+  margin: 8em;
+  padding: 2em;
+  border-radius: 3em;
+`;
+
 export {
   DisplayContainer, CalculatorContainer, PanelContainer, StyledButton,
-  NavStyle, Logo, Section, Calculator, QuoteContainer,
+  NavStyle, Logo, Section, Calculator, QuoteContainer, Main,
 };

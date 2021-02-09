@@ -27,7 +27,7 @@ a {
 
 body {
   font-family: 'Rubik', sans-serif;
-  background-image: linear-gradient(#090f14, #03030371, #090f14), url('./images/bg_image.jpg');
+  background-image: linear-gradient(#090f14, #37190071, #090f14), url('./images/bg_image.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
