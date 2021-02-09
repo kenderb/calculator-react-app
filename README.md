@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-[Live version](https://objective-mahavira-2c23e8.netlify.app/)
+[Live version](https://priceless-nobel-1a6837.netlify.app/)
 
 ## Prerequisites
 
