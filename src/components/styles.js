@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-const marginContainer = '2rem';
-
 const DisplayContainer = styled.div`
   padding: 0.5rem;
   font-size: 2rem;
@@ -12,12 +10,6 @@ const DisplayContainer = styled.div`
   color: white;
   height: 100px;
   font-weight: bold;
-`;
-
-const CalculatorContainer = styled.div`
-  margin: ${marginContainer} auto ${marginContainer};
-  width: 100%;
-  max-width: 700px;
 `;
 
 const PanelContainer = styled.div`
@@ -71,7 +63,8 @@ const NavStyle = styled.nav`
 
 const Logo = styled.div`
   a {
-    font-size: 1.8em;
+    padding: 0.5em;
+    font-size: 2.6em;
     background: transparent;
     color: #3171F5;
   }
@@ -90,8 +83,20 @@ const Section = styled.section`
     margin-top: 1em;
   }
 `;
+const Calculator = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3em;
+  
+`;
+
+const CalculatorContainer = styled.div`
+  margin-left: auto;
+  width: 100%;
+  max-width: 700px;
+`;
 
 export {
   DisplayContainer, CalculatorContainer, PanelContainer, StyledButton,
-  NavStyle, Logo, Section,
+  NavStyle, Logo, Section, Calculator,
 };
