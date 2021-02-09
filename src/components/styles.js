@@ -40,26 +40,41 @@ const StyledButton = styled.button`
   }
 `;
 const NavStyle = styled.nav`
+  a {
+    background-color: #f5913e;
+    border-radius: 0.5em;
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    &:hover {
+      transform: scale(2);
+    }
+  }
   padding: 1em;
   display:flex;
   align-items: center;
-  background-color: red;
   ul {
     margin-left: auto;
     list-style: none;
     display: flex;
     justify-content: flex-end;
     li {
-      padding:  0 1em 0 1em;
+      padding:  0 0.5em 0 0.5em;
     }
-    a {
-      text-transform: uppercase;
-      font-weight: bold;
-    }
+    
+  }
+`;
+
+const Logo = styled.div`
+  a {
+    font-size: 1.5em;
+    background: transparent;
+    color: #3171F5;
   }
 `;
 
 export {
   DisplayContainer, CalculatorContainer, PanelContainer, StyledButton,
-  NavStyle,
+  NavStyle, Logo,
 };

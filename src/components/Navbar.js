@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { NavStyle } from './styles';
+import { NavStyle, Logo } from './styles';
 
 const Navbar = () => (
   <NavStyle>
-    <Link to="/">Math Magicians</Link>
+    <Logo>
+      <Link to="/">Math Magicians</Link>
+    </Logo>
     <ul>
       <li>
         <Link to="/">
