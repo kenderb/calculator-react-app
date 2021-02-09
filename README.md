@@ -2,6 +2,9 @@
 
 >   I base this project on the practice for React.js using class components. This app is a calculator to do some basic operations.
 
+
+![screenshot](./screenshot_01.png)
+
 ## Built With
 
 - React.js
