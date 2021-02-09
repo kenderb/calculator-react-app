@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -15,4 +18,18 @@
 
 img {
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-image: linear-gradient(#090f14, #37190071, #090f14), url('./images/bg_image.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

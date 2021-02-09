@@ -2,15 +2,21 @@
 
 >   I base this project on the practice for React.js using class components. This app is a calculator to do some basic operations.
 
+
+![screenshot](./screenshot_01.png)
+
 ## Built With
 
 - React.js
 - CSS.
-
+- big.js.
+- prop-types
+- react-dom.
+- styled-components.
 
 ## Live Demo
 
-[Live version](https://objective-mahavira-2c23e8.netlify.app/)
+[Live version](https://priceless-nobel-1a6837.netlify.app/)
 
 ## Prerequisites
 
@@ -28,6 +34,8 @@ To get a local copy up and running follow these simple example steps.
 2. Install dependencies using: `npm install`.
 2. Run a server using: `npm start`.
 
+## 📝 Testing
+1. Run a test using: `npm test`.
 
 ## Authors
 

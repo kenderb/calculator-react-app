@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-const marginContainer = '2rem';
-
 const DisplayContainer = styled.div`
   padding: 0.5rem;
   font-size: 2rem;
@@ -12,11 +10,6 @@ const DisplayContainer = styled.div`
   color: white;
   height: 100px;
   font-weight: bold;
-`;
-
-const CalculatorContainer = styled.div`
-  margin: ${marginContainer} auto ${marginContainer};
-  width: 700px;
 `;
 
 const PanelContainer = styled.div`
@@ -38,7 +31,93 @@ const StyledButton = styled.button`
     color: #f5913e;
   }
 `;
+const NavStyle = styled.nav`
+  position: sticky;
+  top: 0;
+  a {
+    background-color: #f5913e;
+    border-radius: 0.5em;
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    &:hover {
+      transform: scale(2);
+    }
+  }
+  padding: 1em;
+  margin: 0.5em 0 6em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  ul {
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    li {
+      padding:  0 0.5em 0 0.5em;
+    }
+    
+  }
+`;
+
+const Logo = styled.div`
+  a {
+    padding: 0.5em;
+    font-size: 2.6em;
+    background: transparent;
+    color: #3171F5;
+  }
+`;
+
+const Section = styled.section`
+  margin: 4em;
+  color: white;
+  h1 {
+    font-size: 2.3em;
+    padding: 0  0 1em;
+  }
+  
+  p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-top: 1em;
+  }
+`;
+const CalculatorDiv = styled.div`
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3em;
+  margin: auto;
+  max-width: 95em;
+  
+`;
+
+const CalculatorContainer = styled.div`
+  margin-left: auto;
+  width: 100%;
+  max-width: 700px;
+`;
+
+const QuoteContainer = styled.p`
+color: white;
+  text-align:center;
+  margin: auto;
+  padding: 5em;
+  font-size: 2em;
+  line-height: 1.3em;
+`;
+
+const Main = styled.main`
+  background-color: #0e0e0ea1;
+  margin: 8em;
+  padding: 2em;
+  border-radius: 3em;
+`;
 
 export {
   DisplayContainer, CalculatorContainer, PanelContainer, StyledButton,
+  NavStyle, Logo, Section, CalculatorDiv, QuoteContainer, Main,
 };
