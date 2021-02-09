@@ -14,7 +14,6 @@
 - react-dom.
 - styled-components.
 
-
 ## Live Demo
 
 [Live version](https://priceless-nobel-1a6837.netlify.app/)
@@ -35,6 +34,8 @@ To get a local copy up and running follow these simple example steps.
 2. Install dependencies using: `npm install`.
 2. Run a server using: `npm start`.
 
+## 📝 Testing
+1. Run a test using: `npm test`.
 
 ## Authors
 
