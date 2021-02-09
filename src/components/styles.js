@@ -40,6 +40,8 @@ const StyledButton = styled.button`
   }
 `;
 const NavStyle = styled.nav`
+  position: sticky;
+  top: 0;
   a {
     background-color: #f5913e;
     border-radius: 0.5em;
@@ -52,6 +54,7 @@ const NavStyle = styled.nav`
     }
   }
   padding: 1em;
+  margin: 0.5em;
   display:flex;
   align-items: center;
   ul {
@@ -68,13 +71,27 @@ const NavStyle = styled.nav`
 
 const Logo = styled.div`
   a {
-    font-size: 1.5em;
+    font-size: 1.8em;
     background: transparent;
     color: #3171F5;
   }
 `;
 
+const Section = styled.section`
+  margin: 4em;
+  h1 {
+    font-size: 1.6em;
+    padding: 2em  0 1em;
+  }
+  
+  p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-top: 1em;
+  }
+`;
+
 export {
   DisplayContainer, CalculatorContainer, PanelContainer, StyledButton,
-  NavStyle, Logo,
+  NavStyle, Logo, Section,
 };

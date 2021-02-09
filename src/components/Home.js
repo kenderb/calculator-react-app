@@ -1,7 +1,8 @@
 import React from 'react';
+import { Section } from './styles';
 
 const Home = () => (
-  <section>
+  <Section>
     <h1>
       Welcome to our page!
     </h1>
@@ -23,6 +24,6 @@ const Home = () => (
       fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
       sunt in culpa qui o!cia deserunt mollit anim id est laborum. Ipsu
     </p>
-  </section>
+  </Section>
 );
 export default Home;
