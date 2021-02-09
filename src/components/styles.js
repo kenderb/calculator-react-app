@@ -46,7 +46,7 @@ const NavStyle = styled.nav`
     }
   }
   padding: 1em;
-  margin: 0.5em;
+  margin: 0.5em 0 12em;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -73,6 +73,7 @@ const Logo = styled.div`
 
 const Section = styled.section`
   margin: 4em;
+  color: white;
   h1 {
     font-size: 1.6em;
     padding: 2em  0 1em;
@@ -85,6 +86,7 @@ const Section = styled.section`
   }
 `;
 const Calculator = styled.div`
+  color: white;
   display: flex;
   flex-wrap: wrap;
   padding: 3em;
@@ -100,6 +102,7 @@ const CalculatorContainer = styled.div`
 `;
 
 const QuoteContainer = styled.p`
+color: white;
   text-align:center;
   margin: auto;
   padding: 5em;
